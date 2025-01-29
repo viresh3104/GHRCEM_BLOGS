@@ -78,7 +78,7 @@ header {
 .content {
   place-items: center;
   position: relative;
-  top: 40%;
+  top: 15%;
 }
 
 .title {
@@ -134,16 +134,93 @@ header {
   animation-name: aurora-border, aurora-move-5;
 }
 
-.subtitle {
-  font-size: 1.8em;
-  margin-top: 0em;
-  left: 15%;
-  position: relative;
+.vision {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  height: 45%;
+  text-align: start;
+  backdrop-filter: blur(3px);
+  padding-top:1em ;
+  .subtitle {
+    width: 60%;
+    font-size: 2.5em;
+    position: relative;
+    margin: 0em;
+    left: 4%;
+    margin-bottom: 0;
+  }
+  .vision-desc {
+    position: relative;
+    width: 55%;
+    left: 6%;
+    overflow: hidden;
+  }
+
+  #our-vision{
+    font-size: 1.6em;
+    margin-bottom: 0.1em;
+    margin-top: 0.2em;
+  }
+
+  #our-vision-desc{
+    margin: 0.5em;
+    margin-left: 3%;
+    font-size: 1.1em;
+  }
+
+  #our-mission{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    }
+
+  #our-mission-desc{
+    margin-top: 0;
+    margin-left: 3%;
+  }
+
+
+
+  ul {
+    padding: 0;
+    margin: 0;
+    max-width: 40.625em;
+    position: relative;
+    list-style: none;
+  }
+
+  ul::before {
+    content: "";
+    width: 0.5em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    background: rgb(191, 187, 183);
+    z-index: -1;
+  }
+
+  li {
+    padding: 0.5rem 1.5rem 1rem;
+    border-radius: 0.5em;
+    background: rgb(191, 187, 183);
+  }
+
+  li + li {
+    margin-top: 1rem;
+  }
+
+  ::marker {
+    font-weight: 600;
+    color: rgb(191, 187, 183);
+    font-size: 1.8rem;
+  }
 }
 
 .link-blogs {
   position: relative;
-  top: 60%;
+  top: 68%;
   font-size: 1.2em;
   padding: 0.7em;
   border: 0.1px solid #5c0f8b;
@@ -158,16 +235,6 @@ header {
   transform: scale3d(1.2) !important;
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* blogs section */
 #blogs {
@@ -266,22 +333,6 @@ h2 {
   font-size: 1em;
   align-self: flex-start;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* scrolling animation */
 @keyframes scroll {
