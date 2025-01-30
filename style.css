@@ -243,6 +243,15 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
+#title{
+  margin-top: 7%;
+  font-size: 2.5em;
+  h1{
+    margin-bottom: 0em;
+
+  }
+}
 .card {
   border: 2px solid black;
   display: flex;
@@ -255,6 +264,10 @@ header {
   animation: scroll ease-in-out;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+}
+
+.blog-container{
+  margin-top: 0em;
 }
 .upper {
   display: flex;
