@@ -21,13 +21,9 @@ body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
     repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 0.92s infinite;
-  /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 0.92s infinite;
-  /* Fx 5+ */
   -o-animation: bg-scrolling-reverse 0.92s infinite;
-  /* Opera 12+ */
   animation: bg-scrolling-reverse 0.92s infinite;
-  /* IE 10+ */
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
@@ -142,7 +138,7 @@ header {
   height: 45%;
   text-align: start;
   backdrop-filter: blur(3px);
-  padding-top:1em ;
+  padding-top: 1em;
   .subtitle {
     width: 60%;
     font-size: 2.5em;
@@ -158,29 +154,27 @@ header {
     overflow: hidden;
   }
 
-  #our-vision{
+  #our-vision {
     font-size: 1.6em;
     margin-bottom: 0.1em;
     margin-top: 0.2em;
   }
 
-  #our-vision-desc{
+  #our-vision-desc {
     margin: 0.5em;
     margin-left: 3%;
     font-size: 1.1em;
   }
 
-  #our-mission{
+  #our-mission {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    }
+  }
 
-  #our-mission-desc{
+  #our-mission-desc {
     margin-top: 0;
     margin-left: 3%;
   }
-
-
 
   ul {
     padding: 0;
@@ -197,14 +191,14 @@ header {
     position: absolute;
     top: 0;
     left: 8%;
-    background: rgb(191, 187, 183);
+    background: rgb(172, 210, 243);
     z-index: -1;
   }
 
   li {
     padding: 0.5rem 1.5rem 1rem;
     border-radius: 0.5em;
-    background: rgb(191, 187, 183);
+    background: rgb(172, 210, 243);
   }
 
   li + li {
@@ -218,9 +212,47 @@ header {
   }
 }
 
-.link-blogs {
+.image-slides {
   position: relative;
-  top: 68%;
+  width: 600px;
+  height: 40%;
+  left: 64%;
+  top: 21.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .photoslideshow {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    .photos {
+      display: flex;
+      border-radius: 10px;
+      animation: slide_animation 28s infinite ease-in-out;
+      -webkit-animation: slide_animation 28s infinite ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      flex-shrink: 0;
+      object-fit: cover;
+      float: left;
+      position: relative;
+    }
+  }
+}
+
+.link-blogs {
+  position: absolute;
+  top: 80%;
+  left: 45%;
   font-size: 1.2em;
   padding: 0.7em;
   border: 0.1px solid #5c0f8b;
@@ -244,17 +276,15 @@ header {
   flex-direction: column;
 }
 .card {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   width: 100em;
-  border-radius: 2em;
+  border-radius: 1em;
   text-align: start;
   margin: 2em;
   padding: 1.5em;
-  animation: scroll ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  backdrop-filter: blur(3px);
+  animation: borderRotate var(--d) linear infinite forwards;
 }
 .upper {
   display: flex;
@@ -263,8 +293,8 @@ header {
 }
 #blog-image {
   height: 20em;
-  border-radius: 2em;
-  margin: 1em 1em 2em;
+  border-radius: 1em;
+  margin: 1em 1em 1em;
   position: relative;
 }
 .left {
@@ -277,17 +307,18 @@ header {
 }
 .left h6 {
   font-size: 1em;
+  font-weight: 400;
   color: gray;
   margin: 0em 2.6em 0.5em;
 }
-.button{
+.button {
   display: flex;
   justify-content: center;
-  position:relative;
-  top:2.4em;
+  position: relative;
+  top: 2.4em;
 }
 .button button {
-  color:#5c0f8b;
+  color: #5c0f8b;
   font-size: 1.2em;
   padding: 0.2em 0.8em;
   border: 0.1px solid #5c0f8b;
@@ -295,7 +326,7 @@ header {
   transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
     color 0.4s ease-in-out;
 }
-.button button:hover{
+.button button:hover {
   background-color: #5c0f8b;
   transform: scale3d(1.2) !important;
   color: white;
@@ -307,17 +338,63 @@ header {
 .lower {
   display: none;
   position: relative;
-  top:1.2em;
+  top: 1.7em;
   font-size: 1.2em;
   margin: 0em 1.25em;
-  padding:0.6em;
+  padding: 0.6em;
+}
+
+/* border animation for the blog section */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+  --d: 4000ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgb(12, 23, 43);
+  --c2: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: 0.2rem solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
 }
 
 /* scrolling animation */
 @keyframes scroll {
   from {
     opacity: 0;
-    scale: 0.9;
+    scale: 0.8;
   }
 }
 
@@ -360,6 +437,50 @@ header {
 @keyframes bg-scrolling {
   0% {
     background-position: 50px 50px;
+  }
+}
+
+@keyframes slide_animation {
+  0%,
+  12.5% {
+    transform: translateX(0);
+  } /* First image pauses */
+  25%,
+  37.5% {
+    transform: translateX(-600px);
+  } /* Second image pauses */
+  50%,
+  62.5% {
+    transform: translateX(-1200px);
+  } /* Third image pauses */
+  75%,
+  87.5% {
+    transform: translateX(-1800px);
+  } /* Fourth image pauses */
+  100% {
+    transform: translateX(-2400px);
+  } /* Fifth image pauses and loop restarts */
+}
+
+@-webkit-keyframes slide_animation {
+  0%,
+  12.5% {
+    transform: translateX(0);
+  }
+  25%,
+  37.5% {
+    transform: translateX(-600px);
+  }
+  50%,
+  62.5% {
+    transform: translateX(-1200px);
+  }
+  75%,
+  87.5% {
+    transform: translateX(-1800px);
+  }
+  100% {
+    transform: translateX(-2400px);
   }
 }
 
