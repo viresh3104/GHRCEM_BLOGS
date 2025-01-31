@@ -16,8 +16,9 @@ body {
   display: grid;
   background-color: var(--bg);
   color: black;
-  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  font-family: "Andika", serif;
   text-align: center;
+  overflow-x: hidden;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
     repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 0.92s infinite;
@@ -85,6 +86,7 @@ header {
   overflow: hidden;
   margin: 0;
   top: 30%;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
 }
 
 .aurora {
@@ -131,85 +133,98 @@ header {
 }
 
 .vision {
-  /* border: 1px solid black; */
   position: absolute;
   top: 32%;
   width: 100%;
-  height: 45%;
+  border-radius: 0.8em;
+  height: 48%;
   text-align: start;
   backdrop-filter: blur(3px);
   padding-top: 1em;
+  background: rgba(78, 82, 82, 0.2); /* Charcoal Grey with opacity */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  z-index: -1;
   .subtitle {
     width: 60%;
-    font-size: 2.5em;
+    font-size: 3em;
     position: relative;
     margin: 0em;
-    left: 4%;
+    left: 13%;
     margin-bottom: 0;
   }
-  .vision-desc {
+  .subtitle-1 {
+    left: 19%;
     position: relative;
-    width: 55%;
-    left: 6%;
-    overflow: hidden;
-  }
-
-  #our-vision {
-    font-size: 1.6em;
+    font-size: 2em;
+    margin-top: 0.5em;
     margin-bottom: 0.1em;
-    margin-top: 0.2em;
   }
-
-  #our-vision-desc {
-    margin: 0.5em;
-    margin-left: 3%;
-    font-size: 1.1em;
-  }
-
-  #our-mission {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-
-  #our-mission-desc {
-    margin-top: 0;
-    margin-left: 3%;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    max-width: 40.625em;
+  .subtitle-2 {
+    background-color: rgb(175, 205, 231);
+    margin-top: 0.4em;
     position: relative;
-    list-style: none;
+    border-radius: 0.8em;
+    padding: 0.8em;
+    left: 15.5%;
+    width: 34%;
+    height: 46%;
+    font-size: 1.2em;
   }
+  .subtitle-3 {
+    font-size: 1.5em;
+    position: relative;
+    left: 2.5%;
+    background: linear-gradient(to right, #4797e2, #e636ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
+#container {
+  margin: 0%;
+}
 
-  ul::before {
-    content: "";
-    width: 0.5em;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 8%;
-    background: rgb(172, 210, 243);
-    z-index: -1;
-  }
+#circle {
+  position: absolute;
+  top: -8.5%;
+  left: 89%;
+  width: 30%;
+}
 
-  li {
-    padding: 0.5rem 1.5rem 1rem;
-    border-radius: 0.5em;
-    background: rgb(172, 210, 243);
-  }
+#circle text {
+  font-family: "Helvetica Neue", Arial;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  li + li {
-    margin-top: 1rem;
-  }
+#circle svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
 
-  ::marker {
-    font-weight: 600;
-    color: rgb(191, 187, 183);
-    font-size: 1.8rem;
-  }
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
 .image-slides {
@@ -251,7 +266,7 @@ header {
 
 .link-blogs {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 45%;
   font-size: 1.2em;
   padding: 0.7em;
@@ -275,6 +290,13 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
+#blog-title {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  margin-top: 7.5%;
+  font-weight: 700;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -283,7 +305,8 @@ header {
   text-align: start;
   margin: 2em;
   padding: 1.5em;
-  backdrop-filter: blur(3px);
+  /* background-color: #4e575e,0.5; */
+  backdrop-filter: blur(5px);
   animation: borderRotate var(--d) linear infinite forwards;
 }
 .upper {
@@ -303,6 +326,7 @@ header {
 }
 .left h1 {
   font-size: 2.5em;
+  font-weight: 500;
   margin: 0em 1em 0em;
 }
 .left h6 {
@@ -391,12 +415,12 @@ header {
 }
 
 /* scrolling animation */
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     opacity: 0;
     scale: 0.8;
   }
-}
+} */
 
 /* backround animation */
 @-webkit-keyframes bg-scrolling-reverse {
@@ -481,6 +505,19 @@ header {
   }
   100% {
     transform: translateX(-2400px);
+  }
+}
+
+/* home page rotating logo */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
   }
 }
 

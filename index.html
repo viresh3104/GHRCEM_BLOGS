@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- header section -->
@@ -23,7 +26,7 @@
     <section id="home">
       <div class="content">
         <h1 class="title">
-          Department of AI & AIML
+          Machines Over Minds
           <div class="aurora">
             <div class="aurora__item"></div>
             <div class="aurora__item"></div>
@@ -33,44 +36,51 @@
         </h1>
       </div>
       <div class="vision">
-        <p class="subtitle">
-          In Association with AICC and Society for Data Science
+        <p class="subtitle">Department of AI & AIML Presents</p>
+        <p class="subtitle-1">The Blog : Machines Over Minds</p>
+        <p class="subtitle-2">
+          Machines Over Minds In the age of automation, machines are rapidly
+          surpassing human minds in speed, efficiency, and precision. Artificial
+          intelligence and data-driven algorithms now make critical decisions,
+          minimizing human error. While creativity and intuition remain uniquely
+          human, machines dominate in processing vast amounts of information
+          instantly.The shift from human-driven to machine-led problem-solving is redefining industries, 
+          from healthcare to finance. 
+        <p class="subtitle-3">
+          In Collaboration with Artificial Intelligence Coding Club (AICC)
+          & Socity For Data Science (S4DS)
         </p>
-        <div class="vision-desc">
-          <p id="our-vision">Our Vision</p>
-          <p id="our-vision-desc">
-            To cultivate globally competent and ethical professionals,
-            innovators, and entrepreneurs with a deep knowledge base and an
-            insatiable curiosity for the latest advancements in Artificial
-            Intelligence. We aim to foster a culture of continuous learning,
-            critical thinking, and problem-solving.
-          </p>
-
-          <p id="our-mission">Our Mission</p>
-
-          <ul id="our-mission-desc">
-            <li>
-              Pursue excellence in Artificial Intelligence, able to adapt
-              changing technologies through effective Teaching- Learning and
-              practical research process.
-            </li>
-            <li>
-              Develop competent and ethical professionals for global market with
-              the spirit of self-study, team work, innovation.
-            </li>
-          </ul>
-        </div>
       </div>
+
+
+    <!-- rotating circle -->
+    <div id="container">
+      <div id="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+          <defs>
+              <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+          </defs>
+          <circle cx="150" cy="100" r="75" fill="none"/>
+          <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="#000">
+                  <textPath xlink:href="#circlePath">• Artificial Intelligence & Coding CLub • Society4DS<textPath>
+              </text>
+          </g>
+      </svg>
+      </div>
+      </div>
+      
 
       <div class="image-slides">
         <div class="photoslideshow">
           <div class="photos">
             <!-- Original Set of Images -->
+            <img src="image copy.png" alt="" />
             <img src="image.png" alt="" />
+            <img src="image copy.png" alt="" />
             <img src="image.png" alt="" />
-            <img src="image.png" alt="" />
-            <img src="image.png" alt="" />
-            <img src="image.png" alt="" />
+            <img src="image copy.png" alt="" />
           </div>
         </div>
       </div>
@@ -81,15 +91,15 @@
     <!-- blogs -->
     <section id="blogs">
       <div class="blog-container">
-
+        <h1 id="blog-title">Department's Blogs</h1>
         <!-- blog 1 -->
-        <div class="card scroll-effect ">
+        <div class="card">
           <div class="upper box">
             <img id="blog-image" src="image.png" />
             <div class="left">
               <h1>Web Development</h1>
               <h6>
-                ● Viresh Navtake&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Published
+                ● Viresh Navtake&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Published
                 On 12.50AM 31st Jan
               </h6>
               <div class="description">
@@ -105,13 +115,7 @@
                 fugit commodi consequatur ab quo blanditiis? Itaque quos tenetur
                 soluta facilis nisi! Maiores fugiat dolore deleniti quidem ipsam
                 recusandae odit, id inventore quas quis minima sint debitis,
-                vero eius, repellendus nam distinctio? Quo molestias placeat
-                eaque iure tenetur, maxime ipsa at eius dolorem facilis officiis
-                pariatur eveniet officia quisquam similique earum dignissimos
-                cumque. Voluptates natus incidunt dignissimos reiciendis nihil
-                pariatur sapiente corrupti dicta aliquam asperiores iste tempore
-                voluptatibus doloremque ipsum magnam expedita officia,
-                laboriosam optio ut similique, autem quam enim.
+                vero eius, repellendus nam distinctio?
               </div>
             </div>
           </div>
@@ -176,19 +180,19 @@
             nam facilis molestias voluptatem odio assumenda ex!
           </div>
           <div class="button">
-            <button id="read-more">+Read More</button>
+            <button id="read-more">+ Read More</button>
           </div>
         </div>
 
         <!-- blog 2 -->
         <div class="card">
-          <div class="upper">
+          <div class="upper box">
             <img id="blog-image" src="image.png" />
             <div class="left">
               <h1>Web Development</h1>
               <h6>
-                ● Varun Rane&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Published
-                On-30th Jan
+                ● Viresh Navtake&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Published
+                On 12.50AM 31st Jan
               </h6>
               <div class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In
@@ -203,13 +207,7 @@
                 fugit commodi consequatur ab quo blanditiis? Itaque quos tenetur
                 soluta facilis nisi! Maiores fugiat dolore deleniti quidem ipsam
                 recusandae odit, id inventore quas quis minima sint debitis,
-                vero eius, repellendus nam distinctio? Quo molestias placeat
-                eaque iure tenetur, maxime ipsa at eius dolorem facilis officiis
-                pariatur eveniet officia quisquam similique earum dignissimos
-                cumque. Voluptates natus incidunt dignissimos reiciendis nihil
-                pariatur sapiente corrupti dicta aliquam asperiores iste tempore
-                voluptatibus doloremque ipsum magnam expedita officia,
-                laboriosam optio ut similique, autem quam enim.
+                vero eius, repellendus nam distinctio?
               </div>
             </div>
           </div>
@@ -274,19 +272,19 @@
             nam facilis molestias voluptatem odio assumenda ex!
           </div>
           <div class="button">
-            <button id="read-more">+Read More</button>
+            <button id="read-more">+ Read More</button>
           </div>
         </div>
 
         <!-- blog 3 -->
         <div class="card">
-          <div class="upper">
+          <div class="upper box">
             <img id="blog-image" src="image.png" />
             <div class="left">
               <h1>Web Development</h1>
               <h6>
-                ● Varun Rane&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Published
-                On-30th Jan
+                ● Viresh Navtake&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Published
+                On 12.50AM 31st Jan
               </h6>
               <div class="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In
@@ -301,13 +299,7 @@
                 fugit commodi consequatur ab quo blanditiis? Itaque quos tenetur
                 soluta facilis nisi! Maiores fugiat dolore deleniti quidem ipsam
                 recusandae odit, id inventore quas quis minima sint debitis,
-                vero eius, repellendus nam distinctio? Quo molestias placeat
-                eaque iure tenetur, maxime ipsa at eius dolorem facilis officiis
-                pariatur eveniet officia quisquam similique earum dignissimos
-                cumque. Voluptates natus incidunt dignissimos reiciendis nihil
-                pariatur sapiente corrupti dicta aliquam asperiores iste tempore
-                voluptatibus doloremque ipsum magnam expedita officia,
-                laboriosam optio ut similique, autem quam enim.
+                vero eius, repellendus nam distinctio?
               </div>
             </div>
           </div>
@@ -372,7 +364,7 @@
             nam facilis molestias voluptatem odio assumenda ex!
           </div>
           <div class="button">
-            <button id="read-more">+Read More</button>
+            <button id="read-more">+ Read More</button>
           </div>
         </div>
 
