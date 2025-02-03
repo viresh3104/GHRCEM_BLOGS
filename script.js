@@ -17,6 +17,24 @@ function reader() {
 }
 reader();
 
+
+function updateHref() {
+  const link = document.getElementById("dynamic-link");
+
+  if (window.innerWidth <= 768) {
+    link.setAttribute("href", "#scroll-manage");
+  } else {
+    link.setAttribute("href", "#blogs");
+  }
+}
+
+// Run on page load
+updateHref();
+
+// Run when window resizes
+window.addEventListener("resize", updateHref);
+
+
 // https://codepen.io/michellebarker/pen/gOMBPQj
 
   
