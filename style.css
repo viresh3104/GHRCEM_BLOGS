@@ -623,6 +623,10 @@ header {
     margin: 0px;
   }
 
+  .title{
+    margin: 0.4em;
+  }
+
   header {
     position: absolute;
     left: 66%;
@@ -651,7 +655,7 @@ header {
   }
 
   .vision {
-    top: 16%;
+    top: 18%;
     height: fit-content;
     /* margin: 8px 8px; */
   }
@@ -681,6 +685,7 @@ header {
     display: flex;
     justify-content: space-evenly;
   }
+
   #sds-new {
     display: block;
     height: 4em;
@@ -699,7 +704,8 @@ header {
 
   .link-blogs {
     /* position: absolute; */
-    top: 54%;
+    top: 52%;
+    display: none;
     /* width: fit-content; */
     font-size: 1em !important;
     left: 28%;
@@ -708,12 +714,12 @@ header {
 
   .image-slides {
     left: 1.7% !important;
-    padding-top: 0.1em;
+    padding-top: 1em;
     height: 25%;
     margin: 1.2%;
     width: 93.5%;
-    margin-bottom: 52em;
-    top: 51%;
+    margin-bottom: 56em;
+    top: 43%;
   }
 
   #blogs {
@@ -722,15 +728,13 @@ header {
   }
 
   #blog-title {
-    margin-top: -9em !important;
+    margin-top: -10em !important;
     font-size: 1.8em;
-    margin-left: 1.2em !important;
   }
 
   .blog-container {
     justify-content: center;
     align-items: center;
-    /* margin-left: 0% !important; */
   }
 
   .card {
@@ -741,12 +745,12 @@ header {
 
   .upper {
     flex-direction: column;
-    height: 72vh;
+    height: 65vh;
   }
 
   #blog-image {
     width: 90%;
-    height: 35%;
+    height: 40%;
     margin: 5%;
     margin-bottom: 1%;
     /* margin-top: 0.8em; */
@@ -763,8 +767,8 @@ header {
   }
 
   .description {
-    height: auto;
-    font-size: 0.71em;
+    height: fit-content;
+    font-size: 0.65em;
     margin: 0em 0.3em 0em 1.5em;
   }
 
@@ -774,7 +778,7 @@ header {
   }
 
   .lower {
-    font-size: 0.71em;
+    font-size: 0.64em;
     margin: 0em 0.3em 0.5em 1em;
     padding-top: 0em;
   }
