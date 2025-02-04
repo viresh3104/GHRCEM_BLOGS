@@ -8,7 +8,7 @@
   --clr-4: #30373d;
   --clr-5: #ffd700;
   --blur: 1rem;
-  --fs: clamp(2.8rem, 8vw, 7rem);
+  --fs: clamp(2.8rem, 6vw, 6rem);
   --ls: clamp(-1.75px, -0.25vw, -3.5px);
 }
 
@@ -54,37 +54,37 @@ header {
   padding: 1.1em 2em;
   border-radius: 0.8em;
   z-index: 1000;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .clg-logo {
   position: absolute;
-  top: 2.5em;
+  top: 2em;
   left: 3%;
-  height: 5em;
+  height: 4em;
 }
 
 .club-logo {
   position: absolute;
-  top: 2.2em;
+  top: 2em;
   left: 14%;
-  height: 5em;
+  height: 4em;
 }
 
 .s4ds {
   position: absolute;
-  top: 2.2em;
+  top: 1.9em;
   left: 80%;
-  height: 5em;
-  width: 8em;
+  height: 4em;
+  width: 6em;
   object-fit: cover;
 }
 
 .content {
   place-items: center;
   position: relative;
-  top: 15%;
+  top: 13%;
 }
 
 .title {
@@ -101,7 +101,7 @@ header {
 .aurora {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0.5em;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -143,10 +143,10 @@ header {
 
 .vision {
   position: absolute;
-  top: 32%;
+  top: 30%;
   width: 100%;
   border-radius: 0.8em;
-  height: 48%;
+  height: fit-content;
   text-align: start;
   backdrop-filter: blur(3px);
   padding-top: 1em;
@@ -155,17 +155,17 @@ header {
   z-index: -1;
   .subtitle {
     width: 60%;
-    font-size: 3em;
+    font-size: 2.3em;
     position: relative;
     margin: 0em;
-    left: 13%;
+    left: 10%;
     margin-bottom: 0;
   }
   .subtitle-1 {
-    left: 19%;
+    left: 13%;
     position: relative;
     font-size: 2em;
-    margin-top: 0.5em;
+    margin-top: 0em;
     margin-bottom: 0.1em;
   }
   .subtitle-2 {
@@ -174,13 +174,14 @@ header {
     position: relative;
     border-radius: 0.8em;
     padding: 0.8em;
-    left: 15.5%;
+    left: 10%;
     width: 34%;
-    height: 46%;
-    font-size: 1.2em;
+    height: fit-content;
+    font-size: 1em;
   }
   .subtitle-3 {
-    font-size: 1.5em;
+    margin-top: -0.5em;
+    font-size: 1.2em;
     position: relative;
     left: 2.5%;
     background: linear-gradient(to right, #364b5f, #e6368e);
@@ -202,9 +203,9 @@ header {
 
 #circle {
   position: absolute;
-  top: -8.5%;
-  left: 89%;
-  width: 30%;
+  top: -11.5%;
+  left: 86%;
+  width: 40%;
 }
 
 #circle text {
@@ -245,9 +246,9 @@ header {
 
 .image-slides {
   position: relative;
-  width: 600px;
-  height: 40%;
-  left: 64%;
+  width: 500px;
+  height: 42%;
+  left: 63%;
   top: 21.5%;
   display: flex;
   justify-content: center;
@@ -282,10 +283,10 @@ header {
 
 .link-blogs {
   position: absolute;
-  top: 85%;
+  top: 90%;
   left: 45%;
-  font-size: 1.2em;
-  padding: 0.7em;
+  font-size: 1em;
+  padding: 0.3em 0.8em;
   border: 0.1px solid #5c0f8b;
   border-radius: 0.8em;
   transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out,
@@ -316,7 +317,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
-  width: 100em;
+  width: 90%;
   /* border-radius: 1em; */
   text-align: start;
   margin: 2em;
@@ -372,7 +373,7 @@ header {
   color: white;
 }
 .description {
-  font-size: 1.2em;
+  font-size: 1.05em;
   margin: 0em 2.4em 0.5em;
 }
 .lower {
@@ -487,18 +488,18 @@ header {
   } /* First image pauses */
   25%,
   37.5% {
-    transform: translateX(-600px);
+    transform: translateX(-500px);
   } /* Second image pauses */
   50%,
   62.5% {
-    transform: translateX(-1200px);
+    transform: translateX(-1000px);
   } /* Third image pauses */
   75%,
   87.5% {
-    transform: translateX(-1800px);
+    transform: translateX(-1500px);
   } /* Fourth image pauses */
   100% {
-    transform: translateX(-2400px);
+    transform: translateX(-2000px);
   } /* Fifth image pauses and loop restarts */
 }
 
