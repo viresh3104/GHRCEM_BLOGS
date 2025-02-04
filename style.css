@@ -59,17 +59,26 @@ header {
 }
 
 .clg-logo {
-  position: fixed;
+  position: absolute;
   top: 2.5em;
   left: 3%;
   height: 5em;
 }
 
 .club-logo {
-  position: fixed;
+  position: absolute;
   top: 2.2em;
   left: 14%;
   height: 5em;
+}
+
+.s4ds {
+  position: absolute;
+  top: 2.2em;
+  left: 80%;
+  height: 5em;
+  width: 8em;
+  object-fit: cover;
 }
 
 .content {
@@ -180,6 +189,13 @@ header {
     font-weight: bold;
   }
 }
+
+#sds-new,
+#aicc-new {
+  position: relative;
+  display: none;
+}
+
 #container {
   margin: 0%;
 }
@@ -596,9 +612,10 @@ header {
 
 @media (max-width: 768px) {
   #home {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
     min-height: 150vh;
+
     /* border: 1px solid black; */
   }
 
@@ -619,11 +636,10 @@ header {
     top: 1em;
     left: 3%;
   }
+
+  .s4ds,
   .club-logo {
-    position: absolute;
-    top: 34.5em !important;
-    left: 15% !important;
-    height: 3.7em !important;
+    display: none;
   }
 
   #container {
@@ -635,35 +651,55 @@ header {
   }
 
   .vision {
-    top: 18%;
-    height: 35%;
+    top: 16%;
+    height: fit-content;
     /* margin: 8px 8px; */
   }
   .subtitle {
     font-size: 1.3em !important;
-    width: 100% !important;
-    left: 3% !important;
+    width: 95% !important;
+    left: 2.5% !important;
   }
 
   .subtitle-1 {
     display: none;
-    margin-top: 0.1em !important;
-    text-align: center;
   }
 
   .subtitle-2 {
-    width: 90% !important;
-    left: 2% !important;
+    width: 88% !important;
+    left: 2.5% !important;
     font-size: 0.8em !important;
-    height: 49% !important;
+    height: fit-content !important;
   }
 
   .subtitle-3 {
     font-size: 0.9em !important;
+    margin-bottom: 0.3em;
+  }
+
+  .hidden-logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #sds-new {
+    display: block;
+    height: 4em;
+    width: 6em;
+    /* left: 5%; */
+    margin-bottom: 0.5em;
+  }
+
+  #aicc-new {
+    display: block;
+    height: 4em;
+    width: 6em;
+    /* left: 12%; */
+    margin-bottom: 0.5em;
   }
 
   .link-blogs {
-    top: 56%;
+    /* position: absolute; */
+    top: 54%;
     /* width: fit-content; */
     font-size: 1em !important;
     left: 28%;
@@ -672,10 +708,12 @@ header {
 
   .image-slides {
     left: 1.7% !important;
-    padding-top: 1em;
+    padding-top: 0.1em;
     height: 25%;
-    width: 345px;
-    top: 53%;
+    margin: 1.2%;
+    width: 93.5%;
+    margin-bottom: 52em;
+    top: 51%;
   }
 
   #blogs {
@@ -684,21 +722,21 @@ header {
   }
 
   #blog-title {
-    margin-top: -6em !important;
+    margin-top: -9em !important;
     font-size: 1.8em;
     margin-left: 1.2em !important;
   }
 
   .blog-container {
-    justify-content: start;
-    align-items: start;
-    margin-left: 0% !important;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 0% !important; */
   }
+
   .card {
-    margin: 0.3em !important;
-    width: 21.5em;
+    width: 90vw;
     padding: 0em;
-    margin-bottom: 1em !important;
+    margin-bottom: 1% !important;
   }
 
   .upper {
@@ -707,10 +745,11 @@ header {
   }
 
   #blog-image {
-    width: 20em;
-    height: 40%;
-    margin: 0em 0.8em;
-    margin-top: 0.8em;
+    width: 90%;
+    height: 35%;
+    margin: 5%;
+    margin-bottom: 1%;
+    /* margin-top: 0.8em; */
   }
 
   .left h1 {
@@ -724,6 +763,7 @@ header {
   }
 
   .description {
+    height: auto;
     font-size: 0.71em;
     margin: 0em 0.3em 0em 1.5em;
   }
@@ -746,19 +786,19 @@ header {
     } /* First image pauses */
     20%,
     30% {
-      transform: translateX(-345px);
+      transform: translateX(-100%);
     } /* Second image pauses */
     40%,
     50% {
-      transform: translateX(-690px);
+      transform: translateX(-200%);
     } /* Third image pauses */
     60%,
     70% {
-      transform: translateX(-1035px);
+      transform: translateX(-300%);
     } /* Fourth image pauses */
     80%,
     90% {
-      transform: translateX(-1380px);
+      transform: translateX(-400%);
     } /* Fifth image pauses */
     100% {
       transform: translateX(0);
