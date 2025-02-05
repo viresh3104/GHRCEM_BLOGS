@@ -143,13 +143,14 @@ header {
 
 .vision {
   position: absolute;
-  top: 30%;
+  top: 31%;
   width: 100%;
   border-radius: 0.8em;
   height: fit-content;
   text-align: start;
   backdrop-filter: blur(3px);
   padding-top: 1em;
+  padding-bottom:1em ;
   background: rgba(78, 82, 82, 0.2); /* Charcoal Grey with opacity */
   -webkit-backdrop-filter: blur(5px); /* For Safari */
   z-index: -1;
@@ -758,8 +759,9 @@ header {
   }
 
   .left h1 {
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-left: 0.7em;
+    margin-right: 0.1em;
   }
 
   .left h6 {
