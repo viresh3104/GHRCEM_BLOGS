@@ -29,7 +29,7 @@ body {
   -moz-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
-  margin-bottom:0em;
+  margin-bottom: 0em;
 }
 
 html {
@@ -58,7 +58,7 @@ header {
   font-size: 1.3rem;
   font-weight: 700;
   height: fit-content;
-  margin-bottom:0em;
+  margin-bottom: 0em;
 }
 
 .clg-logo {
@@ -153,7 +153,7 @@ header {
   text-align: start;
   backdrop-filter: blur(3px);
   padding-top: 1em;
-  padding-bottom:1em ;
+  padding-bottom: 1em;
   background: rgba(78, 82, 82, 0.2); /* Charcoal Grey with opacity */
   -webkit-backdrop-filter: blur(5px); /* For Safari */
   z-index: -1;
@@ -429,29 +429,28 @@ header {
     30;
 }
 
-footer{
-  background-color: rgb(15, 23, 42) ;
-  color:aliceblue;
-  height:max-content;
+/* footer {
+  background-color: rgb(15, 23, 42);
+  color: aliceblue;
+  height: max-content;
   position: relative;
-  width:102%;
-  margin-left:-1em;
-  padding-top:0.8em;
-  padding-bottom:0.8em;
-  h3{
+  width: 105%;
+  margin-left: -1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  h3 {
     margin: 0em;
   }
-  a{
+  a {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
   }
-  h4{
-    /* font-family: "Inter", "DM Sans", Arial, sans-serif; */
+  h4 {
     font-weight: 400;
-    position:relative;
-    margin:0em;
+    position: relative;
+    margin: 0em;
   }
-}
+} */
 
 @keyframes borderRotate {
   100% {
@@ -652,7 +651,7 @@ footer{
     margin: 0px;
   }
 
-  .title{
+  .title {
     margin: 0.4em;
   }
 
@@ -812,8 +811,8 @@ footer{
     margin: 0em 0.3em 0.5em 1em;
     padding-top: 0em;
   }
-  footer{
-    width:100vw;
+  footer {
+    width: 100vw;
   }
   @keyframes slide_animation {
     0%,
